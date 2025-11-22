@@ -1,6 +1,7 @@
 // Подготовка к загрузке файла
 var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://isandrey.github.io/netology_homeworks/img/i.webp", true);
+//xhr.open("GET", "https://isandrey.github.io/netology_homeworks/img/i.webp", true);
+xhr.open("GET", "../img/i.webp", true);
 xhr.responseType = 'blob';
 xhr.onload = function(e) {
   if (this.status == 200) {
@@ -45,3 +46,4 @@ function runTimer() {
 
 showTimer();
 idTimer = setInterval(runTimer, delayInMS);
+
