@@ -18,7 +18,6 @@ xhr.onload = function(e) {
 // Подготовка таймера
 const timer = document.getElementById("timer");
 let timeInMS = parseInt(timer.innerHTML) * 1000;
-timeInMS = 11000110000;
 const delayInMS = 1000;
 var idTimer;
 
@@ -46,5 +45,6 @@ function runTimer() {
 
 showTimer();
 idTimer = setInterval(runTimer, delayInMS);
+
 
 
