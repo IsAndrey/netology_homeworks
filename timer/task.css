@@ -1,7 +1,9 @@
 #status {
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: clip;
 }
+
 
 
 
