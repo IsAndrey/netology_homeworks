@@ -6,6 +6,10 @@
   color: green;
 }
 
+.symbol_incorrect {
+  color: red;
+}
+
 .word_incorrect {
   background: red;
   color: #fff;
