@@ -31,6 +31,7 @@ function controlManager(element, controlClassName, indControl) {
 
   element.addEventListener("click", function (e) {
     const controlClassNameActive = `${controlClassName}_active`;
+    e.preventDefault();
     for (let i = 0; i < control.length; i++) {
       if (
         (e.target === control[i]) &
@@ -66,3 +67,4 @@ controlManager(
   "color",
   indBgColor
 );
+
