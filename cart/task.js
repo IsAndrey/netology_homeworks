@@ -64,7 +64,7 @@ function updateLocalStorage() {
 }
 
 function shot({ element, ...params }) {
-  newElement = element.cloneNode();
+  const newElement = element.cloneNode();
   element.remove();
   params.left += params.stepLeft;
   params.top += params.stepTop;
@@ -92,7 +92,7 @@ function showProductMoving(product, cartProduct) {
   const stepTop = (rectFinish.top - rectStart.top) / shotCount;
   const shotTime = movieTime / shotCount;
 
-  newImg = imgFinish.cloneNode();
+  const newImg = imgFinish.cloneNode();
   setTimeout(shot, shotTime, {
     element: newImg,
     left: rectStart.left,
@@ -178,3 +178,4 @@ function cartProductsOnClickHandler(e) {
 products.addEventListener("click", productsOnClickHandler);
 cart.addEventListener("click", cartProductsOnClickHandler);
 window.addEventListener("load", loadLocalStorage);
+
