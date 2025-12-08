@@ -7,6 +7,10 @@ body {
   align-items: center;
 }
 
+.cart {
+  display: none;
+}
+
 .cart__product {
   position: relative;
 }
@@ -26,11 +30,24 @@ body {
   height: 100px;
   object-fit: contain;
 }
+
+.cart__product-del {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px solid red;
+  border-radius: 50%;
+  padding: 2px 5px;
+  color: red;
+  cursor: pointer;
+}
+
 .product {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
 }
+
 .product__title {
   width: 100%;
   text-transform: uppercase;
